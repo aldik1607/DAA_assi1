@@ -1,6 +1,6 @@
+package sort;
 
 import org.junit.jupiter.api.Test;
-import sort.Select;
 
 import java.util.Arrays;
 import java.util.Random;

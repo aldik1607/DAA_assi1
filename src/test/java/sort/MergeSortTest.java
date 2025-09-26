@@ -1,6 +1,6 @@
+package sort;
 
 import org.junit.jupiter.api.Test;
-import sort.MergeSort;
 
 import static org.junit.jupiter.api.Assertions.*;
 
