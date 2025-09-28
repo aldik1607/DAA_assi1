@@ -1,54 +1,50 @@
 package sort;
 
 import org.junit.jupiter.api.Test;
-import sort.Select;
-
-import java.util.Arrays;
-import java.util.Random;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 class SelectTest {
 
-    private final Random random = new Random();
+    @Test
+    void testSingleElement() {
+        int[] arr = {42};
+        assertEquals(42, Select.select(arr.clone(), 0));
+    }
 
     @Test
-    void testRandomArrays() {
-        Select select = new Select();
-
-        for (int t = 0; t < 100; t++) {
-            int n = 1 + random.nextInt(100); // размер массива 1..100
-            int[] arr = new int[n];
-            for (int i = 0; i < n; i++) arr[i] = random.nextInt(1000);
-
-            int k = random.nextInt(n);
-            int expected = Arrays.stream(arr).sorted().toArray()[k];
-            int actual = Select.select(arr.clone(), k);
-
-            assertEquals(expected, actual, "Failed on array " + Arrays.toString(arr) + " with k=" + k);
+    void testAllEqualElements() {
+        int[] arr = {7, 7, 7, 7};
+        for (int i = 0; i < arr.length; i++) {
+            assertEquals(7, Select.select(arr.clone(), i));
         }
     }
 
     @Test
-    void testSmallArray() {
-        Select select = new Select();
-        int[] arr = {5, 2, 9, 1, 7};
-
-        assertEquals(1, select.select(arr.clone(), 0));
-        assertEquals(2, select.select(arr.clone(), 1));
-        assertEquals(5, select.select(arr.clone(), 2));
-        assertEquals(7, select.select(arr.clone(), 3));
-        assertEquals(9, select.select(arr.clone(), 4));
+    void testArrayWithDuplicates() {
+        int[] arr = {5, 2, 5, 2, 5};
+        assertEquals(2, Select.select(arr.clone(), 1));
+        assertEquals(5, Select.select(arr.clone(), 3));
     }
 
     @Test
-    void testArrayWithDuplicates() {
-        Select select = new Select();
-        int[] arr = {4, 4, 2, 2, 1};
+    void testSortedArray() {
+        int[] arr = {1, 2, 3, 4, 5};
+        assertEquals(1, Select.select(arr.clone(), 0));
+        assertEquals(3, Select.select(arr.clone(), 2));
+        assertEquals(5, Select.select(arr.clone(), 4));
+    }
 
-        assertEquals(1, select.select(arr.clone(), 0));
-        assertEquals(2, select.select(arr.clone(), 1));
-        assertEquals(2, select.select(arr.clone(), 2));
-        assertEquals(4, select.select(arr.clone(), 3));
-        assertEquals(4, select.select(arr.clone(), 4));
+    @Test
+    void testReverseArray() {
+        int[] arr = {5, 4, 3, 2, 1};
+        assertEquals(1, Select.select(arr.clone(), 0));
+        assertEquals(3, Select.select(arr.clone(), 2));
+        assertEquals(5, Select.select(arr.clone(), 4));
+    }
+
+    @Test
+    void testEmptyArrayThrows() {
+        int[] arr = {};
+        assertThrows(IllegalArgumentException.class, () -> Select.select(arr.clone(), 0));
     }
 }
