@@ -1,42 +1,55 @@
 package sort;
 
 import org.junit.jupiter.api.Test;
-import sort.MergeSort;
-
 import static org.junit.jupiter.api.Assertions.*;
 
-public class MergeSortTest {
+class MergeSortTest {
 
     @Test
-    public void testSortBasic() {
-        int[] arr = {5, 2, 9, 1, 5, 6};
-        int[] expected = {1, 2, 5, 5, 6, 9};
-
-        MergeSort sorter = new MergeSort();
-        sorter.sort(arr);
-
-        assertArrayEquals(expected, arr);
-    }
-
-    @Test
-    public void testEmptyArray() {
+    void testEmptyArray() {
         int[] arr = {};
         int[] expected = {};
-
-        MergeSort sorter = new MergeSort();
-        sorter.sort(arr);
-
+        MergeSort.sort(arr);
         assertArrayEquals(expected, arr);
     }
 
     @Test
-    public void testSingleElement() {
+    void testSingleElementArray() {
         int[] arr = {42};
         int[] expected = {42};
+        MergeSort.sort(arr);
+        assertArrayEquals(expected, arr);
+    }
 
-        MergeSort sorter = new MergeSort();
-        sorter.sort(arr);
+    @Test
+    void testAllEqualElements() {
+        int[] arr = {7, 7, 7, 7};
+        int[] expected = {7, 7, 7, 7};
+        MergeSort.sort(arr);
+        assertArrayEquals(expected, arr);
+    }
 
+    @Test
+    void testArrayWithDuplicates() {
+        int[] arr = {5, 2, 5, 2, 5};
+        int[] expected = {2, 2, 5, 5, 5};
+        MergeSort.sort(arr);
+        assertArrayEquals(expected, arr);
+    }
+
+    @Test
+    void testSortedArray() {
+        int[] arr = {1, 2, 3, 4, 5};
+        int[] expected = {1, 2, 3, 4, 5};
+        MergeSort.sort(arr);
+        assertArrayEquals(expected, arr);
+    }
+
+    @Test
+    void testReverseArray() {
+        int[] arr = {5, 4, 3, 2, 1};
+        int[] expected = {1, 2, 3, 4, 5};
+        MergeSort.sort(arr);
         assertArrayEquals(expected, arr);
     }
 }

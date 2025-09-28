@@ -1,42 +1,55 @@
 package sort;
 
 import org.junit.jupiter.api.Test;
-import sort.QuickSort;
-
 import static org.junit.jupiter.api.Assertions.*;
 
-public class QuickSortTest {
+class QuickSortTest {
 
     @Test
-    public void testSortBasic() {
-        int[] arr = {9, 3, 7, 1, 5};
-        int[] expected = {1, 3, 5, 7, 9};
-
-        QuickSort sorter = new QuickSort();
-        sorter.sort(arr);
-
-        assertArrayEquals(expected, arr);
-    }
-
-    @Test
-    public void testEmptyArray() {
+    void testEmptyArray() {
         int[] arr = {};
         int[] expected = {};
-
-        QuickSort sorter = new QuickSort();
-        sorter.sort(arr);
-
+        QuickSort.sort(arr);
         assertArrayEquals(expected, arr);
     }
 
     @Test
-    public void testSingleElement() {
+    void testSingleElementArray() {
         int[] arr = {42};
         int[] expected = {42};
+        QuickSort.sort(arr);
+        assertArrayEquals(expected, arr);
+    }
 
-        QuickSort sorter = new QuickSort();
-        sorter.sort(arr);
+    @Test
+    void testAllEqualElements() {
+        int[] arr = {7, 7, 7, 7};
+        int[] expected = {7, 7, 7, 7};
+        QuickSort.sort(arr);
+        assertArrayEquals(expected, arr);
+    }
 
+    @Test
+    void testArrayWithDuplicates() {
+        int[] arr = {5, 2, 5, 2, 5};
+        int[] expected = {2, 2, 5, 5, 5};
+        QuickSort.sort(arr);
+        assertArrayEquals(expected, arr);
+    }
+
+    @Test
+    void testSortedArray() {
+        int[] arr = {1, 2, 3, 4, 5};
+        int[] expected = {1, 2, 3, 4, 5};
+        QuickSort.sort(arr);
+        assertArrayEquals(expected, arr);
+    }
+
+    @Test
+    void testReverseArray() {
+        int[] arr = {5, 4, 3, 2, 1};
+        int[] expected = {1, 2, 3, 4, 5};
+        QuickSort.sort(arr);
         assertArrayEquals(expected, arr);
     }
 }

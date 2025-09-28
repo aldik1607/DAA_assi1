@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4f1b446a-4b10-4931-b7b7-6882a7aa6b61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sort/MergeSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sort/MergeSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sort/QuickSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sort/QuickSortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,96 +56,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ClosestPairTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ClosestPairTest.testSmallRandom.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ClosestPairTest.testValidateAgainstBruteForBiggerN.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MergeSortTest.testSortBasic.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QuickSortTest.testSortBasic.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SampleTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SelectTest.testRandomArrays.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/bench&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.ClosestPairTest.executor": "Run",
+    "JUnit.ClosestPairTest.testSmallRandom.executor": "Run",
+    "JUnit.ClosestPairTest.testValidateAgainstBruteForBiggerN.executor": "Run",
+    "JUnit.MergeSortTest.testAllEqualElements.executor": "Run",
+    "JUnit.MergeSortTest.testArrayWithDuplicates.executor": "Run",
+    "JUnit.MergeSortTest.testEmptyArray.executor": "Run",
+    "JUnit.MergeSortTest.testReverseArray.executor": "Run",
+    "JUnit.MergeSortTest.testSingleElementArray.executor": "Run",
+    "JUnit.MergeSortTest.testSortBasic.executor": "Run",
+    "JUnit.MergeSortTest.testSortedArray.executor": "Run",
+    "JUnit.QuickSortTest.testEmptyArray.executor": "Run",
+    "JUnit.QuickSortTest.testSortBasic.executor": "Run",
+    "JUnit.SampleTest.executor": "Run",
+    "JUnit.SelectTest.testRandomArrays.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "fix/edge-cases-tests",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "terminal",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="sort" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SelectTest.testRandomArrays">
-    <configuration name="ClosestPairTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DAA_assi1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="geometry.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="geometry" />
-      <option name="MAIN_CLASS_NAME" value="geometry.ClosestPairTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClosestPairTest.testValidateAgainstBruteForBiggerN" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DAA_assi1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="geometry.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="geometry" />
-      <option name="MAIN_CLASS_NAME" value="geometry.ClosestPairTest" />
-      <option name="METHOD_NAME" value="testValidateAgainstBruteForBiggerN" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MergeSortTest.testSortBasic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DAA_assi1" />
-      <option name="PACKAGE_NAME" value="sort" />
-      <option name="MAIN_CLASS_NAME" value="sort.MergeSortTest" />
-      <option name="METHOD_NAME" value="testSortBasic" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QuickSortTest.testSortBasic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DAA_assi1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sort" />
-      <option name="MAIN_CLASS_NAME" value="sort.QuickSortTest" />
-      <option name="METHOD_NAME" value="testSortBasic" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SelectTest.testRandomArrays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SelectTest.testEmptyArrayThrows">
+    <configuration name="SelectTest.testAllEqualElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DAA_assi1" />
       <extension name="coverage">
         <pattern>
@@ -154,7 +105,71 @@
       </extension>
       <option name="PACKAGE_NAME" value="sort" />
       <option name="MAIN_CLASS_NAME" value="sort.SelectTest" />
-      <option name="METHOD_NAME" value="testRandomArrays" />
+      <option name="METHOD_NAME" value="testAllEqualElements" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectTest.testArrayWithDuplicates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DAA_assi1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sort" />
+      <option name="MAIN_CLASS_NAME" value="sort.SelectTest" />
+      <option name="METHOD_NAME" value="testArrayWithDuplicates" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectTest.testEmptyArrayThrows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DAA_assi1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sort" />
+      <option name="MAIN_CLASS_NAME" value="sort.SelectTest" />
+      <option name="METHOD_NAME" value="testEmptyArrayThrows" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectTest.testReverseArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DAA_assi1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sort" />
+      <option name="MAIN_CLASS_NAME" value="sort.SelectTest" />
+      <option name="METHOD_NAME" value="testReverseArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectTest.testSortedArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DAA_assi1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sort" />
+      <option name="MAIN_CLASS_NAME" value="sort.SelectTest" />
+      <option name="METHOD_NAME" value="testSortedArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SelectTest.testRandomArrays" />
-        <item itemvalue="JUnit.QuickSortTest.testSortBasic" />
-        <item itemvalue="JUnit.MergeSortTest.testSortBasic" />
-        <item itemvalue="JUnit.ClosestPairTest" />
-        <item itemvalue="JUnit.ClosestPairTest.testValidateAgainstBruteForBiggerN" />
+        <item itemvalue="JUnit.SelectTest.testEmptyArrayThrows" />
+        <item itemvalue="JUnit.SelectTest.testReverseArray" />
+        <item itemvalue="JUnit.SelectTest.testSortedArray" />
+        <item itemvalue="JUnit.SelectTest.testArrayWithDuplicates" />
+        <item itemvalue="JUnit.SelectTest.testAllEqualElements" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +221,7 @@
       <workItem from="1758881901860" duration="2582000" />
       <workItem from="1758967871196" duration="35000" />
       <workItem from="1759064786659" duration="9440000" />
+      <workItem from="1759076404840" duration="1167000" />
     </task>
     <servers />
   </component>
