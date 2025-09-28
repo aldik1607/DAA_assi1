@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f1b446a-4b10-4931-b7b7-6882a7aa6b61" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/geometry/ClosestPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/geometry/ClosestPair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sort/Select.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/Select.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sort/MergeSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sort/MergeSortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sort/QuickSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sort/QuickSortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sort/SelectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sort/SelectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +67,7 @@
     &quot;JUnit.SelectTest.testRandomArrays.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/cli&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/bench&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -210,7 +205,7 @@
       <workItem from="1758881623460" duration="269000" />
       <workItem from="1758881901860" duration="2582000" />
       <workItem from="1758967871196" duration="35000" />
-      <workItem from="1759064786659" duration="6684000" />
+      <workItem from="1759064786659" duration="9440000" />
     </task>
     <servers />
   </component>
