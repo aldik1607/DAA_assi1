@@ -1,0 +1,8 @@
+header
+algo,n,trial,time_ns,verified,depth,comparisons,swaps,notes
+
+mergesort,1000,0,10160100,1,10,8717,9976,
+
+mergesort,1000,1,145900,1,10,8707,9976,
+
+mergesort,1000,2,142200,1,10,8733,9976,
