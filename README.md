@@ -1,51 +1,48 @@
-DAA Assignment 1
-Description
+# DAA Assignment 1 — Sorting and Selection Algorithms
 
-This repository contains the solution for the first assignment of the "Design and Analysis of Algorithms" (DAA) course. The following algorithms are implemented and tested:
+This repository contains implementations of classic divide-and-conquer algorithms: MergeSort, QuickSort, Deterministic Select (Median-of-Medians), and Closest Pair of Points in 2D. The goal is to analyze performance, recursion depth, and operation counts.
 
-QuickSort — a randomized, robust quicksort with recursion on the smaller partition.
+## Architecture Notes
 
-MergeSort — classic divide-and-conquer merge sort with reusable buffer and small-n cutoff.
+All algorithms use **safe recursion patterns**:
 
-Median of Medians (Deterministic Select) — linear-time selection algorithm using groups of 5.
+- **DepthTracker** monitors the recursion depth to prevent stack overflow.  
+- **Metrics** counts comparisons, swaps, and other operations for analysis.  
+- Recursion in **QuickSort** and **Select** is done on the smaller partition to keep stack depth bounded (~O(log n) typical).  
+- MergeSort uses a **reusable buffer** and small-n cutoff (InsertionSort) for efficiency.
 
-The implementation is in Java using Maven for dependency management and project build.
+## Recurrence Analysis
 
-Project Structure
+### MergeSort
 
-src/main/java/benchmark/SelectVsSortBenchmark.java — main benchmark class that runs the algorithms and collects metrics.
+Recurrence: `T(n) = 2T(n/2) + Θ(n)`  
 
-pom.xml — Maven configuration file including dependencies and plugins.
+Master Theorem Case 2: `a=2, b=2, f(n)=Θ(n)`  
 
-results.csv — (optional) output file for collected metrics.
+Result: `T(n) = Θ(n log n)`  
+
+### QuickSort (Randomized)
+
+Average-case recurrence: `T(n) = T(k) + T(n−k−1) + Θ(n)`, k ≈ n/2  
+
+Intuition: smaller-first recursion bounds stack depth; expected `Θ(n log n)`, worst-case `Θ(n^2)`  
+
+Tail recursion avoids deep recursion on large partitions  
+
+### Deterministic Select (Median-of-Medians)
+
+Recurrence: `T(n) = T(n/5) + T(7n/10) + Θ(n)`  
+
+Akra–Bazzi intuition: linear-time pivot guarantees `T(n) = Θ(n)`  
+
+### Closest Pair of Points (2D)
+
+Recurrence: `T(n) = 2T(n/2) + Θ(n)` for divide-and-conquer + strip check  
+
+Master Theorem Case 2 → `T(n) = Θ(n log n)`  
 
 
-Dependencies
-
-The project uses:
-
-JUnit 5 — for unit testing.
-
-Maven Compiler Plugin — to compile the source code.
-
-Maven Surefire Plugin — to run tests.
-
-Exec Maven Plugin — to execute Java programs from the command line.
-
-Sample Output of the Benchmark:
-
-Array size: 1000
-QuickSort time (ms): 1
-QuickSort depth: 7
-QuickSort comparisons: 10910
-QuickSort swaps: 6337
-MergeSort time (ms): 1
-MergeSort depth: 10
-MergeSort comparisons: 8686
-MergeSort swaps: 9976
-Select median time (ms): 1
-Select depth: 5
-Select comparisons: 5798
-Select swaps: 4633
-Median value: 5101
------------------------------
+**Observations:**  
+- QuickSort and MergeSort show expected logarithmic recursion depth growth.  
+- Linear-time Select has lower depth but fewer swaps than QuickSort on average.  
+- Constant factors (buffer reuse, small-n cutoffs) noticeably affect measured times.
