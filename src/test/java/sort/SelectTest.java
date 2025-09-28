@@ -1,3 +1,4 @@
+package sort;
 
 import org.junit.jupiter.api.Test;
 import sort.Select;
@@ -21,7 +22,7 @@ class SelectTest {
 
             int k = random.nextInt(n);
             int expected = Arrays.stream(arr).sorted().toArray()[k];
-            int actual = select.select(arr.clone(), k);
+            int actual = Select.select(arr.clone(), k);
 
             assertEquals(expected, actual, "Failed on array " + Arrays.toString(arr) + " with k=" + k);
         }
